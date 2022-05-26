@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Front-end Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="../Scripts/script.js"></script>
+</head>
+
+<body>
+<header class="header">
+    <nav class="nav-flex-container">
+        <div><a class="nav-links" href="#about">About me</a></div>
+        <div><a class="nav-links" href="#portfolio">Portfolio</a></div>
+        <div><a class="nav-links" href="#contacts">Contacts</a></div>
+
+        <div>
+            <div class="hamburger">
+                <input id="menu__toggle" type="checkbox"/>
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <div class="menu__box">
+                    <a class="menu__item" href="#about">About me</a>
+                    <a class="menu__item" href="#portfolio">Portfolio</a>
+                    <a class="menu__item" href="#contacts">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1 id="main-header">Axel Strength, <br> Front-end developer</h1>
+</header>
+
+<section id="about">
+    <div>
+        <div class="container">
+            <div class="position-img">
+                <img class="main-background-img" src="images/image.jpg" alt="Ops, something went wrong">
+            </div>
+            <div class="position-img">
+                <img class="main-img" src="images/profilePhoto.png" alt="Ops, something went wrong"><br>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="about-section-text">About me</h2><br>
+        <p class="about-section-text">A successful business person who wants to become <br> better
+            at front-end development and reach a new <br> level of professionalism.
+            I possess such qualities as perseverance, <br> optimism, curiosity,
+            desire to complete the task.<br> I keep the passion in any business,
+            I always try to exceed <br> my capabilities. I also want to gain new experience
+            in <br> the development of modern technologies and projects.
+        </p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="centred-headers">Portfolio</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-items">
+            <img class="portfolio-img" src="images/amazon.png" alt="Ops, something went wrong"><br>
+            <p><strong>Amazon</strong> - multinational technology company</p>
+            <button class="open-window" onclick="togglePopUp1()">Learn more</button>
+        </div>
+        <div class="portfolio-items">
+            <img class="portfolio-img" src="images/yahoo.png" alt="Ops, something went wrong"><br>
+            <p><strong>Yahoo</strong> - web services provider</p>
+            <button class="open-window" onclick="togglePopUp2()">Learn more</button>
+        </div>
+        <div class="portfolio-items">
+            <img class="portfolio-img" src="images/facebook.png" alt="Ops, something went wrong"><br>
+            <p><strong>Facebook</strong> - social networking service</p>
+            <button class="open-window" onclick="togglePopUp3()">Learn more</button>
+        </div>
+        <div class="portfolio-items">
+            <img class="portfolio-img" src="images/twitch.png" alt="Ops, something went wrong"><br>
+            <p><strong>Twitch</strong> - video live streaming service</p>
+            <button class="open-window" onclick="togglePopUp4()">Learn more</button>
+        </div>
+    </div>
+
+    <div class="window" id="window-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Amazon</h1>
+            <p>
+                Trade name: Amazon <br>
+                Formerly: Cadabra, Inc. (1994–1995)<br>
+                Type: Public<br>
+                Headquarters: Seattle, Washington and Arlington, Virginia, U.S.<br>
+                Area served: Worldwide<br>
+                <br>
+                [Amazon.com, Inc. is an American multinational technology company
+                which focuses on e-commerce, cloud computing, digital streaming,
+                and artificial intelligence.]
+            </p>
+            <div class="close-button" onclick="togglePopUp1()">
+                <button>Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="window-2">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Yahoo!</h1>
+            <p>
+                Type of site: Web portal and online services<br>
+                Founded: January 1994; 28 years ago<br>
+                Headquarters: Sunnyvale, California, United States<br>
+                Area served: Worldwide<br>
+                <br>
+                [Yahoo! is an American web services provider. It is headquartered <br>
+                in Sunnyvale, California and operated by the namesake company Yahoo Inc.,
+                which is 90% owned by investment funds managed <br>
+                by Apollo Global Management and 10% by Verizon Communications.]<br>
+            </p>
+            <div class="close-button" onclick="togglePopUp2()">
+                <button>Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="window-3">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Facebook</h1>
+            <p>
+                Type of site: Social networking service <br>
+                Available in: 112 languages<br>
+                Founded: February 4, 2004; Massachusetts<br>
+                Area served: Worldwide<br>
+                <br>
+                [Facebook is an American online social media and social networking service owned by Meta Platforms.
+                Facebook can be accessed from devices with Internet connectivity, such as personal computers,
+                tablets and smartphones. After registering, users can create a profile revealing information
+                about themselves.]
+            </p>
+            <div class="close-button" onclick="togglePopUp3()">
+                <button>Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="window-4">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Twitch</h1>
+            <p>
+                Type of site: Live streaming, streaming video <br>
+                Predecessor(s): Justin.tv <br>
+                Area served: Worldwide <br>
+                Launched: June 6, 2011; 10 years ago <br>
+                Current status: Active <br>
+                <br>
+                [Twitch is an American video live streaming service that focuses
+                on video game live streaming, including broadcasts of esports
+                competitions, in addition to offering music broadcasts,
+                creative content, and "in real life" streams.]
+            </p>
+            <div class="close-button" onclick="togglePopUp4()">
+                <button>Close</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacts">
+    <div class="contacts-container">
+        <div class="contacts-items">
+            <h2 class="centred-headers">Contacts</h2>
+        </div>
+        <br>
+        <div class="contacts-items">
+            <p>Telegram: @theBestProgrammerInTheWorld</p>
+        </div>
+        <div class="contacts-items">
+            <p>Work Mail: public-inquiries@hq.nasa.gov</p>
+        </div>
+        <div class="contacts-items">
+            <p>Address: 1600 Pennsylvania Ave NW Washington, DC 20500
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-items">
+        <p>Axel Strength</p>
+        <p>2022. All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
