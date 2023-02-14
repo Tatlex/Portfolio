@@ -1,7 +1,7 @@
 # Portfolio
 
 ******************************************************************************************
-* Link on project: [GitHub Pages](https://tatlex.github.io/Portfolio/Portfolio/task/src/)
+* Link on project (GitHub Pages): [Portfolio](https://tatlex.github.io/Portfolio/Portfolio/task/src/)
 ******************************************************************************************
 
 ## Table of contents
